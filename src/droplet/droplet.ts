@@ -10,7 +10,7 @@ const droplet = async (slug: string): Promise<number> => {
 
   for (const size of sizes) {
     if (size.slug === slug) {
-      return size.price_hourly;
+      return +(size.price_hourly * 100).toFixed(3);
     }
   }
 

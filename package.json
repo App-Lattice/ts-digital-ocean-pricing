@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Helper package to easily obtain Digital Ocean's pricing. Specifically kubernetes cluster pricing hourly.",
   "main": "index.js",
+  "types": "src/index.ts",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "test": "dotenv -e .env.test jest ./src"

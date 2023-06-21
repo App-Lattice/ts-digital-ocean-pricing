@@ -3,8 +3,7 @@ import DropletWithSlugNotFoundError from './DropletWithSlugNotFoundError';
 
 const droplet = async (slug: string): Promise<number> => {
   const dots = createApiClient({
-    token:
-      'dop_v1_4632a4675b2d1af894ab4621d88dcf8a860128fa916feb9b63fc54c48ac6b1eb',
+    token: process.env.DIGITAL_OCEAN_TOKEN,
   });
 
   const {

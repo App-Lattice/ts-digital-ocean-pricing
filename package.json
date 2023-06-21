@@ -1,5 +1,5 @@
 {
-  "name": "ts-digital-ocean-pricing",
+  "name": "@amanos1022/ts-digital-ocean-pricing",
   "version": "1.0.0",
   "description": "Helper package to easily obtain Digital Ocean's pricing. Specifically kubernetes cluster pricing hourly.",
   "main": "index.js",

@@ -1,0 +1,44 @@
+{
+  "name": "ts-digital-ocean-pricing",
+  "version": "1.0.0",
+  "description": "Helper package to easily obtain Digital Ocean's pricing. Specifically kubernetes cluster pricing hourly.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "dotenv -e .env.test jest ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanos1022/ts-digital-ocean-pricing.git"
+  },
+  "keywords": [
+    "pricing",
+    "digital",
+    "ocean",
+    "kubernetes",
+    "typescript"
+  ],
+  "author": "Angelo Manos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amanos1022/ts-digital-ocean-pricing/issues"
+  },
+  "homepage": "https://github.com/amanos1022/ts-digital-ocean-pricing#readme",
+  "dependencies": {
+    "dots-wrapper": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/node": "^17.0.25",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.23.1",
+    "jest": "^27.5.1",
+    "jest-mock-extended": "^2.0.7",
+    "prettier": "^2.8.8",
+    "ts-jest": "^27.1.5",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.8.3"
+  }
+}

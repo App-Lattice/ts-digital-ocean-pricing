@@ -1,14 +1,12 @@
-import { createApiClient } from 'dots-wrapper';
+import axios from 'axios';
 import DropletWithSlugNotFoundError from './DropletWithSlugNotFoundError';
 
 const droplet = async (slug: string): Promise<number> => {
-  const dots = createApiClient({
-    token: process.env.DIGITAL_OCEAN_TOKEN,
-  });
-
   const {
     data: { sizes },
-  } = await dots.size.listSizes({});
+  } = await axios.get('https://api.digitalocean.com/v2/sizes?per_page=83', {
+    headers: { Authorization: `Bearer ${process.env.DIGITAL_OCEAN_TOKEN}` },
+  });
 
   for (const size of sizes) {
     if (size.slug === slug) {

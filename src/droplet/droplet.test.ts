@@ -11,6 +11,7 @@ describe('droplet', () => {
   });
 
   test('returns the correct price', async () => {
-    expect(droplet('s-1vcpu-1gb')).resolves.toEqual(0.00893);
+    const res = await droplet('s-1vcpu-1gb');
+    expect(res).toEqual(0.00893);
   });
 });

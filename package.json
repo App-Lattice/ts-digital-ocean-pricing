@@ -1,6 +1,6 @@
 {
-  "name": "@app-lattice/ts-digital-ocean-pricing",
-  "version": "7.1.1",
+  "name": "@App-Lattice/ts-digital-ocean-pricing",
+  "version": "1.3.0",
   "description": "Helper package to easily obtain Digital Ocean's pricing. Specifically kubernetes cluster pricing hourly.",
   "main": "index.js",
   "types": "src/index.ts",

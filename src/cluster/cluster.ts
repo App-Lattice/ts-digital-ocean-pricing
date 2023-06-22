@@ -2,7 +2,7 @@ import droplet from '../droplet/droplet';
 import loadBalancer from '../loadBalancer';
 import volumes, { Volume } from '../volumes';
 
-type ClusterResources = {
+export type ClusterResources = {
   nodes: {
     size: string;
     count: number;
@@ -10,7 +10,7 @@ type ClusterResources = {
   volumes: Volume[];
 };
 
-type ClusterPriceHourly = {
+export type ClusterPriceHourly = {
   total: number;
   droplets: number;
   volumes: number;
